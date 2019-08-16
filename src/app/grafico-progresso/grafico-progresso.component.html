@@ -1,0 +1,50 @@
+<mat-grid-list cols="2">
+    <mat-grid-tile>
+        <div class="porcentagem">
+            {{doughnutChartData[0][0]}}%
+        </div>
+        <canvas baseChart 
+            [data]="doughnutChartData[0]"
+            [labels]="doughnutChartLabels"
+            [chartType]="doughnutChartType"
+            [options]="doughnutChartOptions"
+            [colors]="doughnutChartColors">
+        </canvas>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="porcentagem">
+            {{doughnutChartData[1][0]}}%
+        </div>
+        <canvas baseChart 
+        [data]="doughnutChartData[1]"
+        [labels]="doughnutChartLabels"
+        [chartType]="doughnutChartType"
+        [options]="doughnutChartOptions"
+        [colors]="doughnutChartColors">
+        </canvas>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="porcentagem">
+            {{doughnutChartData[2][0]}}%
+        </div>
+        <canvas baseChart 
+        [data]="doughnutChartData[2]"
+        [labels]="doughnutChartLabels"
+        [chartType]="doughnutChartType"
+        [options]="doughnutChartOptions"
+        [colors]="doughnutChartColors">
+        </canvas>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="porcentagem">
+            {{doughnutChartData[3][0]}}%
+        </div>
+        <canvas baseChart 
+        [data]="doughnutChartData[3]"
+        [labels]="doughnutChartLabels"
+        [chartType]="doughnutChartType"
+        [options]="doughnutChartOptions"
+        [colors]="doughnutChartColors">
+        </canvas>
+    </mat-grid-tile>
+</mat-grid-list>

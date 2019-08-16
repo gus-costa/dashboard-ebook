@@ -1,0 +1,22 @@
+<mat-grid-list cols="2">
+    <mat-grid-tile>
+        <canvas baseChart 
+            [data]="pieChartData" 
+            [labels]="pieChartLabels" 
+            [chartType]="pieChartType"
+            [options]="pieChartOptions"
+            [plugins]="pieChartPlugins"
+            [legend]="pieChartLegend">
+        </canvas>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <canvas baseChart 
+            [data]="pieChartData2" 
+            [labels]="pieChartLabels" 
+            [chartType]="pieChartType"
+            [options]="pieChartOptions"
+            [plugins]="pieChartPlugins"
+            [legend]="pieChartLegend">
+        </canvas>
+    </mat-grid-tile>
+</mat-grid-list>
